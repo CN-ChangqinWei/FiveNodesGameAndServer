@@ -1,0 +1,57 @@
+    //角速度环参数初始化
+    Gyro_loop.P=7.37;
+    Gyro_loop.I=0.3128;
+    Gyro_loop.D=14.96;
+    Gyro_loop.Ilimit=2000;          //积分分离限制为角速度量程
+    Gyro_loop.OutPut_Limit=10000;//角速度环限幅
+    Gyro_loop.Irang=5000;
+    Gyro_loop.out_flag=0;
+
+    //角度环参数初始化
+    Angle_Target=-2.413;
+
+    Angle_loop.P=28.381;
+    Angle_loop.I=0;
+    Angle_loop.D=-18.654;
+    Angle_loop.Ilimit=180;          //角度积分限幅
+    Angle_loop.OutPut_Limit=2000;   //角度环输出的限幅是角速度量程
+    Angle_loop.Irang=No_Limit;
+    Angle_loop.out_flag=0;
+
+    Speed_loop.P=0.038926;
+    Speed_loop.I=0.00005892;
+    Speed_loop.D=0;
+    Speed_loop.Ilimit=No_Limit;          //角度积分限幅
+    Speed_loop.OutPut_Limit=180;   //角度环输出的限幅是角速度量程
+    Speed_loop.Irang=No_Limit;
+    Speed_loop.out_flag=0;
+    
+2024-1-28   可以跑的参数
+
+        //角速度环参数初始化
+    Gyro_loop.P=9.25;
+    Gyro_loop.I=0.3332;
+    Gyro_loop.D=32.01;
+    Gyro_loop.Ilimit=2000;          //积分分离限制为角速度量程
+    Gyro_loop.OutPut_Limit=10000;//角速度环限幅
+    Gyro_loop.Irang=5000;
+    Gyro_loop.out_flag=0;
+
+    //角度环参数初始化
+    Angle_Target=-2.465;
+
+    Angle_loop.P=18.338;
+    Angle_loop.I=0;
+    Angle_loop.D=-23.176;
+    Angle_loop.Ilimit=180;          //角度积分限幅
+    Angle_loop.OutPut_Limit=2000;   //角度环输出的限幅是角速度量程
+    Angle_loop.Irang=No_Limit;
+    Angle_loop.out_flag=0;
+
+    Speed_loop.P=0.029534;
+    Speed_loop.I=0.00005792;
+    Speed_loop.D=0.013;
+    Speed_loop.Ilimit=No_Limit;          //角度积分限幅
+    Speed_loop.OutPut_Limit=180;   //角度环输出的限幅是角速度量程
+    Speed_loop.Irang=No_Limit;
+    Speed_loop.out_flag=0;
